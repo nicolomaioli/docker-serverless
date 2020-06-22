@@ -1,7 +1,8 @@
 FROM node:14.4.0-alpine3.12
 
 RUN apk update && \
-	apk add \
+	apk add --no-cache \
+		openssh \
 		python3 \
 		git
 
